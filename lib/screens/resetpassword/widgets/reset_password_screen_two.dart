@@ -5,14 +5,14 @@ import 'package:meet_up/size_config.dart';
 
 import '../../../constants.dart';
 
-class ResetPasswordTwo extends StatefulWidget {
-  ResetPasswordTwo({Key key}) : super(key: key);
+class ResetPasswordScreenTwo extends StatefulWidget {
+  ResetPasswordScreenTwo({Key key}) : super(key: key);
 
   @override
-  _ResetPasswordTwoState createState() => _ResetPasswordTwoState();
+  _ResetPasswordScreenTwoState createState() => _ResetPasswordScreenTwoState();
 }
 
-class _ResetPasswordTwoState extends State<ResetPasswordTwo> {
+class _ResetPasswordScreenTwoState extends State<ResetPasswordScreenTwo> {
   static const SystemUiOverlayStyle overlayStyle = SystemUiOverlayStyle(
     systemNavigationBarColor: Colors.white,
   );
@@ -173,7 +173,7 @@ class _ResetPasswordTwoState extends State<ResetPasswordTwo> {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, "/resetpasswordone");
+                    Navigator.pushNamed(context, "/resetpasswordpageone");
                   },
                   child: AutoSizeText(
                     "Ou essayez avec une autre adresse email",

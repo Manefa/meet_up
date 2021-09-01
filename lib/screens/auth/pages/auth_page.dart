@@ -23,13 +23,12 @@ class _AuthPageState extends State<AuthPage> {
 
   @override
   void initState() {
-    super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       SystemChrome.setSystemUIOverlayStyle(overlayStyle);
     });
-
     _authBloc = AuthBloc(authRepository: _authRepository);
     _authBloc.add(AppStarted());
+    super.initState();
   }
 
   @override
@@ -42,10 +41,11 @@ class _AuthPageState extends State<AuthPage> {
             if (state is Uninitialized) {
               return AuthScreen(authRepository: _authRepository);
             } else if (state is Authenticated) {
-              return HomePage(
-                name: state.displayName,
-              );
+              return HomePage();
+            } else if(state is Unauthenticated){
+              return AuthScreen(authRepository: _authRepository);
             }
+            return Container();
           },
         ),
       ),

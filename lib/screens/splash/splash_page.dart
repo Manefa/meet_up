@@ -21,8 +21,8 @@ class _SplashPageState extends State<SplashPage> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       SystemChrome.setSystemUIOverlayStyle(overlayStyle);
     });
-    Timer(Duration(seconds: 3),
-        () => Navigator.pushNamed(context, "/onboarding"));
+
+    Timer(Duration(seconds: 3), () => Navigator.pushNamed(context, "/onboarding"));
     super.initState();
   }
 

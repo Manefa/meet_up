@@ -197,36 +197,36 @@ class GetStarted extends StatelessWidget {
           Positioned(
             bottom: 0,
             right: 0,
-            child: Container(
-              height: getProportionateScreenHeight(61),
-              width: getProportionateScreenWidth(155),
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(25),
-                  )),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  InkWell(
-                    onTap: () {
-                      Navigator.pushNamed(context, "/auth");
-                    },
-                    child: AutoSizeText(
-                      "Get Started",
-                      style: TextStyle(
-                        fontFamily: "Century Gothic",
-                        color: kPrimaryColor,
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
+            child: InkWell(
+              onTap: () {
+                Navigator.pushNamed(context, "/auth");
+              },
+              child: Container(
+                height: getProportionateScreenHeight(61),
+                width: getProportionateScreenWidth(155),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(25),
+                    )),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    AutoSizeText(
+                        "Get Started",
+                        style: TextStyle(
+                          fontFamily: "Century Gothic",
+                          color: kPrimaryColor,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
+                    Icon(
+                      Icons.arrow_right_alt,
+                      color: kPrimaryColor,
                     ),
-                  ),
-                  Icon(
-                    Icons.arrow_right_alt,
-                    color: kPrimaryColor,
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),

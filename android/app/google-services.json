@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1003025226812",
+    "project_id": "meet-up-f75de",
+    "storage_bucket": "meet-up-f75de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003025226812:android:8d0eb665ed5e19cfda3739",
+        "android_client_info": {
+          "package_name": "com.example.meet_up"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003025226812-2dv2hlotovmvnn710gp6vhjhrcm994f4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meet_up",
+            "certificate_hash": "3c72dc78594cd514b225b968b08cc2dad9841a30"
+          }
+        },
+        {
+          "client_id": "1003025226812-mr5i7f7vb1skt6j9i2qdbluakqat2ri1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx_8tmH5HZCBx-bJSgASjSajkAZE3wuPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003025226812-mr5i7f7vb1skt6j9i2qdbluakqat2ri1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
